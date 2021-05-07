@@ -1,0 +1,132 @@
+$icon-size: 50px;
+$dark-overlay: rgba(0,0,0,0.7);
+.navbar{
+  background: #000;
+  .nav-item{
+    padding-left: 1em;
+  }
+  .nav-link{
+    text-transform: uppercase;
+  }
+}
+.carousel-item{
+  height: 450px;
+}
+.carousel-img-1{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+}
+.carousel-img-2{
+  background: url('../img/image2.jpeg');
+  background-size: cover;
+}
+.carousel-img-3{
+  background: url('../img/image3.jpeg');
+  background-size: cover;
+}
+#homeIcon{
+  .fa{
+    font-size: $icon-size;
+  }
+}
+#getstarted{
+  background: url('../img/bg1.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 250px;
+  position: relative;
+    .dark-overlay{
+      background: $dark-overlay;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+}
+#home-video{
+  background: url('../img/people.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 250px;
+  position: relative;
+    .dark-overlay{
+      background: $dark-overlay;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .fa{
+      color: #ff0000;
+      font-size: $icon-size;
+    }
+}
+#gallery{
+  img{
+    min-height: 250px;
+  }
+}
+#copyright{
+  background: #000;
+}
+
+#page-header{
+  background: url('../img/image1.jpeg');
+  background-size: cover;
+  height: 200px;
+  background-attachment: fixed;
+}
+#about-info{
+  img{
+    width: 350px;
+    height: 350px;
+  }
+}
+#icon-boxes{
+  .fa{
+    font-size: $icon-size;
+    margin-bottom: 20px;
+  }
+}
+#testimonial{
+  .slick-prev:before,
+  .slick-next:before{
+    color: #000;
+  }
+}
+#services-page-header{
+  background: url('../img/image3.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200px;
+}
+#blog-page-header{
+  background: url('../img/image3.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200px;
+}
+@media(max-width: 767px){
+  .nav-item{
+    padding-left: 0 !important;
+  }
+  #getstarted{
+    min-height: 300px;
+  }
+}
+@media(max-width: 480px){
+  .carousel{
+    h2{
+      font-size: 2.4rem;
+    }
+  }
+  #getstarted{
+    min-height: 395px;
+  }
+}
